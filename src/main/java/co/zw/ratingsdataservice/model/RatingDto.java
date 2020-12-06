@@ -5,14 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Entity;
+import java.util.List;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
 @ToString
-@Entity
-public class Rating {
-    public String movieId;
-    public int rating;
+@NoArgsConstructor
+@AllArgsConstructor
+public class RatingDto {
+    List<Rating> ratings;
+
 }
